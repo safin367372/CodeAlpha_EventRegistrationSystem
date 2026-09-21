@@ -2,7 +2,7 @@
 
 A backend Event Registration System built with **Node.js**, **Express.js**, and **MongoDB (Mongoose)** as part of the CodeAlpha Backend Development Internship.
 
-## 📌 Overview
+##  Overview
 
 This project allows events to be listed and viewed, and lets users register for an event, view all their registrations by email, and cancel a registration. It demonstrates a relational link between two MongoDB collections (`Event` and `Registration`) using Mongoose's `ObjectId` references and `.populate()`.
 
@@ -14,7 +14,7 @@ This project allows events to be listed and viewed, and lets users register for 
 - **Mongoose** — MongoDB object modeling for Node.js, including schema references (`ref`) and population
 - **dotenv** — environment variable management
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 codealpha-event-registration/
@@ -27,7 +27,7 @@ codealpha-event-registration/
 └── package.json
 ```
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 1. **Clone the repository**
    ```bash
@@ -59,7 +59,7 @@ codealpha-event-registration/
    Server running on port 5001
    ```
 
-## 🗄 Database Schema
+##  Database Schema
 
 **Collection: `events`**
 
@@ -82,7 +82,7 @@ codealpha-event-registration/
 | createdAt | Date     | Auto-generated timestamp                             |
 | updatedAt | Date     | Auto-generated timestamp                             |
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### 1. List All Events
 
@@ -146,7 +146,7 @@ Returns all registrations for the given email, with the linked event's full deta
 
 **Error responses:** `404` if the registration doesn't exist.
 
-## 🧪 Testing the API
+##  Testing the API
 
 Using `curl`:
 
@@ -168,7 +168,7 @@ curl http://localhost:5001/api/registrations/safin@example.com
 curl -X DELETE http://localhost:5001/api/registrations/REGISTRATION_ID
 ```
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 - Add authentication so registrations are tied to logged-in users instead of raw email input
 - Add an admin panel/route for organizers to manage events and view registrant lists
@@ -176,10 +176,10 @@ curl -X DELETE http://localhost:5001/api/registrations/REGISTRATION_ID
 - Add event capacity limits
 - Add update/edit routes for events
 
-## 👤 Author
+##  Author
 
 Built by Safin Mathew Sam as part of the **CodeAlpha Backend Development Internship**.
 
-## 📄 License
+##  License
 
 This project is for educational purposes as part of the CodeAlpha internship program.
