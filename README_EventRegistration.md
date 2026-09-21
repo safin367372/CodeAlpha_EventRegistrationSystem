@@ -6,7 +6,7 @@ A backend Event Registration System built with **Node.js**, **Express.js**, and 
 
 This project allows events to be listed and viewed, and lets users register for an event, view all their registrations by email, and cancel a registration. It demonstrates a relational link between two MongoDB collections (`Event` and `Registration`) using Mongoose's `ObjectId` references and `.populate()`.
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Node.js** — JavaScript runtime
 - **Express.js** — web server & routing
